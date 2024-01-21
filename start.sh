@@ -1,1 +1,1 @@
-python -m uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+python -m hypercorn main:app -b 0.0.0.0:8080 --reload

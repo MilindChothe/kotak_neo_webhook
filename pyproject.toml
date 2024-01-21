@@ -8,7 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.109.0"
-uvicorn = {extras = ["standard"], version = "^0.26.0"}
+hypercorn = "^0.16.0"
+neo-api-client = {git = "https://github.com/Kotak-Neo/kotak-neo-api.git"}
+aiohttp = {extras = ["speedups"], version = "^3.9.1"}
 
 
 [build-system]
