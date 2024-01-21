@@ -29,4 +29,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/MilindChothe/kotak-neo-webhook:latest
+          tags: ghcr.io/milindchothe/kotak-neo-webhook:latest
