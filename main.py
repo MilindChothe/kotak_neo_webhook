@@ -39,6 +39,11 @@ async def webhook(body: Payload):
     global CLIENT
 
     try:
+        # Verify bearer_token
+        jwt.decode(CLIENT.configuration.bearer_token, options={
+            'verify_signature': False,
+            'verify_exp': True,
+        })
         # Verify edit_token
         jwt.decode(CLIENT.configuration.edit_token, options={
             'verify_signature': False,
