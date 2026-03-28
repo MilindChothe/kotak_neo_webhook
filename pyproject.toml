@@ -3,13 +3,14 @@ name = "kotak-neo-webhook"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pyotp = "2.9.0"
 fastapi = "^0.109.0"
 hypercorn = "^0.16.0"
-neo-api-client = {git = "https://github.com/Kotak-Neo/kotak-neo-api.git"}
+neo-api-client = {git = "https://github.com/Kotak-Neo/Kotak-neo-api-v2.git@v2.0.1#egg=neo_api_client", tag = "v2.0.1"}
 aiohttp = {extras = ["speedups"], version = "^3.9.1"}
 
 

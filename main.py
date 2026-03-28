@@ -89,3 +89,11 @@ async def webhook(body: Payload):
     except Exception as e:
         LOGGER.exception(e)
         return {"status": "Not_Ok", "message": e}
+
+
+#First initialize session and generate session token
+
+# try:
+#     CLIENT.scrip_master()
+# except Exception as e:
+#     print("Exception when calling Scrip Master Api->scrip_master: %s\n" % e)
